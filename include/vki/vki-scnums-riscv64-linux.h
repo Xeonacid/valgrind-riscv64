@@ -149,6 +149,7 @@
 #define __NR_recvfrom 207
 #define __NR_setsockopt 208
 #define __NR_getsockopt 209
+#define __NR_shutdown 210
 #define __NR_sendmsg 211
 #define __NR_recvmsg 212
 #define __NR_brk 214

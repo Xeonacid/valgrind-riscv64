@@ -431,6 +431,7 @@ static SyscallTableEntry syscall_main_table[] = {
    LINXY(__NR_recvfrom, sys_recvfrom),                     /* 207 */
    LINX_(__NR_setsockopt, sys_setsockopt),                 /* 208 */
    LINXY(__NR_getsockopt, sys_getsockopt),                 /* 209 */
+   LINX_(__NR_shutdown, sys_shutdown),                     /* 210 */
    LINX_(__NR_sendmsg, sys_sendmsg),                       /* 211 */
    LINXY(__NR_recvmsg, sys_recvmsg),                       /* 212 */
    GENX_(__NR_brk, sys_brk),                               /* 214 */
