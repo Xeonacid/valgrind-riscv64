@@ -6788,8 +6788,9 @@ POST(sys_lookup_dcookie)
 }
 #endif
 
-#if defined(VGP_amd64_linux) || defined(VGP_s390x_linux)        \
-      || defined(VGP_arm64_linux) || defined(VGP_nanomips_linux)
+#if defined(VGP_amd64_linux) || defined(VGP_s390x_linux)         \
+      || defined(VGP_arm64_linux) || defined(VGP_nanomips_linux) \
+      || defined(VGP_riscv64_linux)
 PRE(sys_lookup_dcookie)
 {
    *flags |= SfMayBlock;
